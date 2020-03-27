@@ -10,9 +10,8 @@ USE burgers_db;
 CREATE TABLE burgers (
   id INTEGER NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR(255) NOT NULL,
-  devoured BOOLEAN NOT NULL,
+  devoured BOOLEAN NOT NULL DEFAULT false,
   PRIMARY KEY (id)
 );
 
 
-INSERT INTO burgers (burger_name, devoured) VALUES ('Cheeseburger', FALSE);
